@@ -5,6 +5,9 @@ Portfólio pessoal para cargos de Data Science
 
 Para estudar este modelo de problema utilizei um data-set de despesas médicas disponibilizado pelo Kaggle.
 
+Inicialmente notei alta quantidade de valores exclusivos em algumas variáveis, desta forma optei por converter variáveis Quantitativas (métricas) para Qualitativas que funcionariam como ranges.
+Ex.: Idade de 20 a 30 anos.
+
 Ao modelar, após o step-wise notei que havia muita dispersão nos resíduos, então optei por aplicar box-cox na variável Y (dependente) para que os dados se tornem mais aderentes a distribuição normal.
 
 Gráficos de resíduos ajustados com box-cox para modelos lineares:
@@ -38,6 +41,12 @@ Para atingir a Acurácia (precisão geral do modelo) otimizada, optei por um cut
 ![alt text](https://scontent.fcgh16-1.fna.fbcdn.net/v/t1.6435-9/242321278_4677395448972183_8695501780341339304_n.jpg?_nc_cat=104&_nc_rgb565=1&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeEiWN5jvUbyBFMxX2MXbrnasp3gQ5r9I3yyneBDmv0jfFchVC_04VH6lLW47yKbHeknWEqcKF9aRWvy2Dk-a9tP&_nc_ohc=d7ZH1LmzgpUAX-yzkmT&_nc_ht=scontent.fcgh16-1.fna&oh=50d4c8a6fc0610595470220cfb206c56&oe=617097BE)
 
 # Multi-class:
+
+Para estudar este modelo de problema utilizei um data-set de despesas médicas disponibilizado pelo Kaggle.
+
+Neste caso de estudo notei um cenário de falta de dados para algumas classes e alguns outliers, logo, houve a remoção de outliers e a divisão de variáveis de treino e testes dinâmicamente por cada classe. Ao inves de pegar do total geral 80% de todos os dados, foram separados 80% de cada classe, para que assim todas classes possuíssem dados para o modelo final.
+
+Após a modelagem utilizando o método Multinom do pacote nnet, graças ao step-wise notei a queda do valor de AIC de aproximadamente 50% e a precisão de 97%.
 
 Matriz de confusão:
 
