@@ -31,7 +31,7 @@ Matriz de confusão:
 
 ![alt text](https://scontent.fcgh16-1.fna.fbcdn.net/v/t1.6435-9/242438090_4676040112441050_47115357313311048_n.jpg?_nc_cat=106&_nc_rgb565=1&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeEljbOZjFdb_QJqvYEEwIvZpZVneiZifaCllWd6JmJ9oNjPi15g87J21I87xZAupZSBWFyBcf1OS8fUcLAhu2jk&_nc_ohc=6r_1YDn4SXkAX9G9tBS&_nc_ht=scontent.fcgh16-1.fna&oh=c46a7bc7a1a9fd2cef3b61f6b9fc283d&oe=616F7F57)
 
-# Fonte dos dados utilizados em cada modelo e seus respectivos dicionários de dados:
+Fonte dos dados utilizados em cada modelo e seus respectivos dicionários de dados:
 
 credit_binary: https://archive.ics.uci.edu/ml/datasets/statlog+(german+credit+data)
 fish_classification: https://www.kaggle.com/aungpyaeap/fish-market
