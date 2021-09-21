@@ -3,9 +3,15 @@ Portfólio pessoal para cargos de Data Science
 
 # Linear Model: 
 
+Para estudar este modelo de problema utilizei um data-set de despesas médicas disponibilizados pela UCI.
+
+Ao modelar, após o step-wise notei que havia muita dispersão nos resíduos, então optei por aplicar box-cox na variável Y (dependente) para que os dados se tornem mais aderentes a distribuição normal.
+
 Gráficos de resíduos ajustados com box-cox para modelos lineares:
 
 ![alt text](https://scontent.fcgh16-1.fna.fbcdn.net/v/t1.6435-9/242405995_4676012222443839_4573273404806404936_n.jpg?_nc_cat=110&_nc_rgb565=1&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeF36oYD2iiQswFo2uSQm1jpuOMU3aDnhvO44xTdoOeG8xGheiZXSxyOur9hF8rdAM8swr7nJWfBcfgN5O7PKqLN&_nc_ohc=-6-AOXr-5eIAX-jS43p&_nc_ht=scontent.fcgh16-1.fna&oh=677d42a4d706223936e4f9b6269a6524&oe=616E8AD4)
+
+Após a transformação de box-cox, o modelo apresentou grande crescimento de R2 ajustado, chegando a 0.90.
 
 Scatter-Plots utilizando o modelo desenvolvido:
 
