@@ -1,6 +1,6 @@
 pacotes <- c("plotly","tidyverse","knitr","kableExtra","fastDummies","rgl","car",
              "reshape2","jtools","lmtest","caret","pROC","ROCR","nnet","magick",
-             "cowplot")
+             "cowplot","cvms","tibble","tidyverse")
 
 if(sum(as.numeric(!pacotes %in% installed.packages())) != 0){
   instalador <- pacotes[!pacotes %in% installed.packages()]
@@ -149,3 +149,25 @@ ggplotly(dados_plotagem %>%
 #Cutoff com acurácia otimizada
 confusionMatrix(table(predict(modelo_credit_step, type = "response") >= 0.45,
                       credit_dummies$CreditStatus == 1)[2:1, 2:1])
+
+#Curva ROC para entendimento geral da performance do modelo
+ggplotly(
+  ggroc(ROC, color = "#440154FF", size = 1) +
+    geom_segment(aes(x = 1, xend = 0, y = 0, yend = 1),
+                 color="grey40",
+                 size = 0.2) +
+    labs(x = "Especificidade",
+         y = "Sensitividade",
+         title = paste("Área abaixo da curva:",
+                       round(ROC$auc, 3),
+                       "|",
+                       "Coeficiente de Gini",
+                       round((ROC$auc[1] - 0.5) / 0.5, 3))) +
+    theme_bw()
+)
+
+predictions <- predict(modelo_credit_step, type = "response") >= 0.45
+
+conf_mat <- confusion_matrix(targets = ifelse(credit_dummies$CreditStatus==1, TRUE, FALSE),
+                             predictions = ifelse(predictions, TRUE, FALSE))
+plot_confusion_matrix(conf_mat$`Confusion Matrix`[[1]])

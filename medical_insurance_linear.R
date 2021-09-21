@@ -90,3 +90,25 @@ plot_out_bc <- medic_dummies %>%
 ggarrange(plot_out, plot_out_bc, 
           labels = c("Without box-cox", "With box-cox"),
           ncol = 1, nrow = 2)
+
+#Plotando algumas das previsões
+
+fitted <- predict(step_modelo_bc_medic, medic_dummies)
+
+fitted <- ((fitted*lambda_BC$lambda)+1)^(1/lambda_BC$lambda)
+
+medic_dummies$fitted <- fitted
+
+plot_age<- ggplot(medic_dummies, aes(age, charges))+
+  geom_point(color="blue") +
+  # Add the line using the fortified fit data, plotting the x vs. the fitted values
+  geom_line(color='red',data = medic_dummies, aes(x = age, y = fitted))
+
+plot_bmi<- ggplot(medic_dummies, aes(bmi, charges))+
+  geom_point(color="blue") +
+  # Add the line using the fortified fit data, plotting the x vs. the fitted values
+  geom_line(color='red',data = medic_dummies, aes(x = bmi, y = fitted))
+
+ggarrange(plot_age, plot_bmi, 
+          labels = c("Charges per Age", "Charges per BMI"),
+          ncol = 1, nrow = 2)
