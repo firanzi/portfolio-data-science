@@ -1,5 +1,5 @@
 # Data Science Portfolio
-Portifólio pessoal para cargos de Data Science
+Portfólio pessoal para cargos de Data Science
 
 # Linear Model: 
 
