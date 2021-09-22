@@ -42,14 +42,15 @@ cluster.hierarquico <- hclust(distancia, method = "single" )
 # Dendrograma
 plot(cluster.hierarquico, cex = 0.6, hang = -1)
 
-#Criar o grafico e destacar os grupos
-rect.hclust(cluster.hierarquico, k = 2)
-
 #VERIFICANDO ELBOW 
 fviz_nbclust(wine.padronizado, FUN = hcut, method = "wss")
 
-#criando 4 grupos de lanches
-grupo_wine3 <- cutree(cluster.hierarquico, k = 4)
+#Criar o grafico e destacar os grupos
+plot(cluster.hierarquico, cex = 0.6, hang = -1)
+rect.hclust(cluster.hierarquico, k = 3)
+
+#criando 4 grupos de vinhos
+grupo_wine3 <- cutree(cluster.hierarquico, k = 3)
 table(grupo_wine3)
 
 wine_grupos <- data.frame(grupo_wine3)
