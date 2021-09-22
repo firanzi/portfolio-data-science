@@ -14,7 +14,11 @@ Divisão de grupos:
 
 ![alt text](https://scontent.fcgh16-1.fna.fbcdn.net/v/t1.6435-9/242461962_4679189345459460_8269510127269278401_n.jpg?_nc_cat=104&_nc_rgb565=1&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeG7kaF1SNY0rL_smgR3JbGXtOuXcmc363e065dyZzfrd5et_9axc6aBus3oMniUmiDuQHfpFMswOr0811YHdwQO&_nc_ohc=yUhiqesjaWsAX9nZ5Fy&_nc_ht=scontent.fcgh16-1.fna&oh=540bf942b3cb6ff772f0dd16bc99cdb5&oe=61700209)
 
-Logo de cara notamos que a divisão não ficou nem de perto a ideal, os grupos ficaram muito diferentes, dos três grupos, dois possuiam apenas 1 observações: 
+Logo de cara notamos que a divisão não ficou nem de perto a ideal, os grupos ficaram muito diferentes, dos três grupos, dois possuiam apenas 1 observação: 
+
+![alt text](https://scontent.fcgh16-1.fna.fbcdn.net/v/t1.6435-9/242532004_4679188858792842_7639171741690818525_n.jpg?_nc_cat=105&_nc_rgb565=1&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeFVZZhkeXXekh92oW1QjBwAvV4pzTKNfDW9XinNMo18Nfihk55PZZXf3hVDbnJPgf_QPKDWkqWXJKXzt-p7nNAk&_nc_ohc=rx7IBleSIUAAX-xxP7o&_nc_ht=scontent.fcgh16-1.fna&oh=5460f5c705f632ad15f0e83c2bfe29fc&oe=6170F9A6)
+
+Optei por criar 4 agrupamentos diferentes para que pudesse avaliar a diferença de cada um, apesar de já ter uma ideia de que 3 seria o número de centróides que apresentaria a melhor divisão pelo ELBOW estudado anteriormente:
 
 ![alt text](https://scontent.fcgh16-1.fna.fbcdn.net/v/t1.6435-9/242491039_4679192782125783_2371432011498097557_n.jpg?_nc_cat=105&_nc_rgb565=1&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeF2nWBIXmR_JTHcmzEf7PlQp1wu37rmrQ2nXC7fuuatDe7v67KdGHNq5wECUL-6nu0ibSSju_fsc6HdVIDG-IFg&_nc_ohc=Z-UO6xg5AzEAX9C6XWh&_nc_ht=scontent.fcgh16-1.fna&oh=df861c024376045e00eaf692bb4fda58&oe=6170948E)
 
