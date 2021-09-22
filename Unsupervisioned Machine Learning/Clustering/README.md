@@ -16,8 +16,6 @@ Divisão de grupos:
 
 Logo de cara notamos que a divisão não ficou nem de perto a ideal, os grupos ficaram muito diferentes, dos três grupos, dois possuiam apenas 1 observações: 
 
-Para atingir a Acurácia (precisão geral do modelo) otimizada, optei por um cutoff de 0.45, que deu origem a seguinte matriz de confusão:
-
 ![alt text](https://scontent.fcgh16-1.fna.fbcdn.net/v/t1.6435-9/242491039_4679192782125783_2371432011498097557_n.jpg?_nc_cat=105&_nc_rgb565=1&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeF2nWBIXmR_JTHcmzEf7PlQp1wu37rmrQ2nXC7fuuatDe7v67KdGHNq5wECUL-6nu0ibSSju_fsc6HdVIDG-IFg&_nc_ohc=Z-UO6xg5AzEAX9C6XWh&_nc_ht=scontent.fcgh16-1.fna&oh=df861c024376045e00eaf692bb4fda58&oe=6170948E)
 
 Não só visualmente como ELBOW nos mostrou, a decisão de 3 grupos apresentou melhor divisão dos dados, porém isso também depende de estratégias de negócio e cabe a avaliação de cada grupo dividido.
