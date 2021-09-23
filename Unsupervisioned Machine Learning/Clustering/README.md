@@ -1,6 +1,6 @@
 # Clustering:
 
-Para estudar este modelo de problema utilizei um data-set de vinhos disponibilizado pela UCI.
+Para estudar este modelo de problema utilizei um data-set de vinhos disponibilizado pela UCI com objetivo de agrupar Vinhos.
 
 A primeira abordagem pensada foram os modelos hierárquicos de agrupamento, primeiramente avaliei o elbow (cotovelo) para definir o número de grupos que se adequa ao meu caso de estudo:
 
