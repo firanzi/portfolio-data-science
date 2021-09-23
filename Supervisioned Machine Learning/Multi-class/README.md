@@ -1,6 +1,6 @@
 # Multi-class:
 
-Para estudar este modelo de problema utilizei um data-set FISH MARKET (mercado de peixes) disponibilizado pelo Kaggle.
+Para estudar este modelo de problema utilizei um data-set FISH MARKET (mercado de peixes) disponibilizado pelo Kaggle com objetivo de definir a espécie do peixe.
 
 Neste caso de estudo notei um cenário de falta de dados para algumas classes e alguns outliers, logo, houve a remoção de outliers e a divisão de variáveis de treino e testes dinâmicamente por cada classe. Ao inves de pegar do total geral 80% de todos os dados, foram separados 80% de cada classe, para que assim todas classes possuíssem dados para o modelo final.
 
