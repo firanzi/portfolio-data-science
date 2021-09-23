@@ -1,6 +1,6 @@
 # Binary:
 
-Para estudar este modelo de problema utilizei um data-set de crédito disponibilizado pela UCI.
+Para estudar este modelo de problema utilizei um data-set de crédito disponibilizado pela UCI com o objetivo de definir se o indivíduo em questão terá (TRUE/1) ou não crédito (FALSE/0).
 
 Após o desenvolvimento do modelo atingi uma área da curva ROC de aproximadamente 83%.
 
